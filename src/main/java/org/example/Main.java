@@ -20,7 +20,7 @@ public class Main {
 
                 Equipo equiposColumna1 = new Equipo(resultados.split(",")[0], "Equipos columna 1");
                 int goles1 = Integer.parseInt(resultados.split(",")[1]);
-                int goles2 = Integer.parseInt(resultados.split(",")[2]);
+                int goles2 =Integer.parseInt(resultados.split(",")[2]) ;
                 Equipo equiposColumna2 = new Equipo(resultados.split(",")[3], "Equipos columna 2");
 
                 Partido partido = new Partido(equiposColumna1, equiposColumna2, goles1, goles2);
@@ -42,7 +42,6 @@ public class Main {
 
                      Pronostico prono = new Pronostico(partido, equipo1, equipo2, resultado1, resultado2, resultado3);
                      puntos = prono.puntos();
-
                 }
             }
             //System.out.println("PUNTAJE ==> " + puntos);
